@@ -131,10 +131,7 @@ describe('Recipes', function() {
         // and returns updated item
         .then(function(res) {
           console.log('THIS IS WHAT WE GET BACK FROM SERVER', res.body);
-          expect(res).to.have.status(204);
-          // expect(res).to.be.json;
-          expect(res.body).to.be.a('object');
-          expect(res.body).to.deep.equal(updateData);
+          expect(res).to.have.status(204); //this is the only thing update does 
         })
     );
   });
